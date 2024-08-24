@@ -46,12 +46,6 @@ function AyameScript(AyameToken) {
         DivorceCommand = require('./src/Commands/Roleplay/Divorce.js'),
         InviteCommand = require('./src/Commands/Info/Invite.js'),
         ChannelsCommand = require('./src/Commands/Info/Channels.js'),
-        EnableNsfwCommandsCommand = require('./src/Commands/Config/EnableNsfwCommands.js'),
-        DisableNsfwCommandsCommand = require('./src/Commands/Config/DisableNsfwCommands.js'),
-        AnalCommand = require('./src/Commands/Nsfw/Anal.js'),
-        NsfwAvatarCommand = require('./src/Commands/Nsfw/NsfwAvatar.js'),
-        ClassicCommand = require('./src/Commands/Nsfw/Classic.js'),
-        TitsCommand = require('./src/Commands/Nsfw/Tits.js'),
         TickleCommand = require('./src/Commands/Roleplay/Tickle.js'),
         HugCommand = require('./src/Commands/Roleplay/Hug.js'),
         CuddleCommand = require('./src/Commands/Roleplay/Cuddle.js'),
@@ -100,10 +94,6 @@ function AyameScript(AyameToken) {
         SetWelcomerMessageDMFunction = require('./src/Functions/SetWelcomerMessageDM.js'),
         InviteFunction = require('./src/Functions/Invite.js'),
         ChannelsFunction = require('./src/Functions/Channels.js'),
-        AnalFunction = require('./src/Functions/Anal.js'),
-        NsfwAvatarFunction = require('./src/Functions/NsfwAvatar.js'),
-        ClassicFunction = require('./src/Functions/Classic.js'),
-        TitsFunction = require('./src/Functions/Tits.js'),
         TickleFunction = require('./src/Functions/Tickle.js'),
         HugFunction = require('./src/Functions/Hug.js'),
         CuddleFunction = require('./src/Functions/Cuddle.js'),
@@ -221,24 +211,6 @@ function AyameScript(AyameToken) {
       AyameMessage(msg);
     } else if(command === 'channels') {
       ChannelsCommand(msg, args, notice, Discord, AyameClient, Db, EmbedTemplate, ChannelsFunction);
-      AyameMessage(msg);
-    } else if(command === 'enablensfwcommands') {
-      EnableNsfwCommandsCommand(msg, args, notice, Discord, AyameClient, Db, EmbedTemplate, Permissions);
-      AyameMessage(msg);
-    } else if(command === 'disablensfwcommands') {
-      DisableNsfwCommandsCommand(msg, args, notice, Discord, AyameClient, Db, EmbedTemplate, Permissions);
-      AyameMessage(msg);
-    } else if(command === 'anal') {
-      AnalCommand(msg, args, notice, Superagent, Discord, AyameClient, Db, EmbedTemplate, AnalFunction);
-      AyameMessage(msg);
-    } else if(command === 'nsfwavatar') {
-      NsfwAvatarCommand(msg, args, notice, Superagent, Discord, AyameClient, Db, EmbedTemplate, NsfwAvatarFunction);
-      AyameMessage(msg);
-    } else if(command === 'classic') {
-      ClassicCommand(msg, args, notice, Superagent, Discord, AyameClient, Db, EmbedTemplate, ClassicFunction);
-      AyameMessage(msg);
-    } else if(command === 'tits') {
-      TitsCommand(msg, args, notice, Superagent, Discord, AyameClient, Db, EmbedTemplate, TitsFunction);
       AyameMessage(msg);
     } else if(command === 'tickle') {
       TickleCommand(msg, args, notice, Superagent, Discord, AyameClient, Db, EmbedTemplate, TickleFunction);
