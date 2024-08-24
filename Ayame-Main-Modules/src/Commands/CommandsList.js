@@ -29,16 +29,6 @@ function CommandsList(Db) {
  Db.set(`enablecommandschannelusage`, `<Mention a Disabled Channel!>`)
  console.log('Registered EnableCommandsChannel Command!')
  
- Db.set(`disablensfwcommandsname`, `DisableNsfwCommands`)
- Db.set(`disablensfwcommandsdescription`, `Disable The NSFW Commands!`)
- Db.set(`disablensfwcommandsusage`, `None!`)
- console.log('Registered DisableNsfwCommands Command!')
- 
- Db.set(`enablensfwcommandsname`, `EnableNsfwCommands`)
- Db.set(`enablensfwcommandsdescription`, `Enable The NSFW Commands!`)
- Db.set(`enablensfwcommandsusage`, `None!`)
- console.log('Registered EnableNsfwCommands Command!')
- 
  Db.set(`redditname`, `Reddit`)
  Db.set(`redditdescription`, `Get a random picture from a specific SubReddit!`)
  Db.set(`redditusage`, `<SubReddit Name!>`)
@@ -78,26 +68,6 @@ function CommandsList(Db) {
  Db.set(`userinfodescription`, `Shows info about specific User!`)
  Db.set(`userinfousage`, `(Mention a User!)`)
  console.log('Registered UserInfo Command!')
- 
- Db.set(`analname`, `||Anal||`)
- Db.set(`analdescription`, `Gets a random ||Anal Hentai!||`)
- Db.set(`analusage`, `None!`)
- console.log('Registered Anal Command!')
- 
- Db.set(`classicname`, `||Classic||`)
- Db.set(`classicdescription`, `Gets a random ||Classic Hentai!||`)
- Db.set(`classicusage`, `None!`)
- console.log('Registered Classic Command!')
- 
- Db.set(`nsfwavatarname`, `||NsfwAvatar||`)
- Db.set(`nsfwavatardescription`, `Gets a random ||Nsfw Avatar!||`)
- Db.set(`nsfwavatarusage`, `None!`)
- console.log('Registered NsfwAvatar Command!')
- 
- Db.set(`titsname`, `||Tits||`)
- Db.set(`titsdescription`, `Gets a random ||Tits Hentai!||`)
- Db.set(`titsusage`, `None!`)
- console.log('Registered Tits Command!')
  
  Db.set(`cuddlename`, `Cuddle`)
  Db.set(`cuddledescription`, `Cuddle with someone or just yourself!`)
